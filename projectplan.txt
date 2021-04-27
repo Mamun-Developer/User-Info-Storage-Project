@@ -1,0 +1,34 @@
+1. Add
+2. Update
+3. Delete
+4. Search
+5. SqlLite3
+
+
+
+//Interface
+----------COMMAND LIST----------
+1. Add
+2. Update
+3. Delete
+4. Searchs
+
+---------ADDING USER-------------
+ PHONE:
+  NAME:
+   AGE:
+GENDER:
+Confirm (Y/N)
+
+---------UPDATING USER-----------
+PHONE:
+What you want to update? (seperate them with comma, if all then *)
+
+---------DELETING USER-----------
+PHONE:
+Confirm Delete (Y/N)
+
+---------SEARCHING USER----------
+PHONE:
+----showing details of *PHONE----
+

@@ -1,8 +1,11 @@
-#What you want to update? (seperate them with comma, if all then *)
-def option_validator(option,updatables,separator = ","):
+# What you want to update? (seperate them with comma, if all then *)
+def option_validator(option, updatables, separator=","):
+    '''
+        while asking user to update column, this fucntion confirms if the inserted columns are valid or not
+    '''
     confirmed_updates = []
     if option == "*":
-        return updatables,False # False means option is validated and can proceed futher
+        return updatables, False  # False means option is validated and can proceed futher
     else:
         sep_options = option.split(separator)
         for op in sep_options:
@@ -10,6 +13,6 @@ def option_validator(option,updatables,separator = ","):
                 confirmed_updates.append(op.strip())
             else:
                 print("Wrong updatable selected")
-                return None,True # True means try again - wrong updatable option selected
-        
-        return confirmed_updates,False
+                return None, True  # True means try again - wrong updatable option selected
+
+        return confirmed_updates, False

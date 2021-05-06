@@ -25,15 +25,20 @@ class User:
         else:
             return False
 
-    def is_age_correct(self, age=1):
-        age = int(age)
-        allowed_range = (13, 91)
-        if type(age) == int:
-            if age in range(allowed_range[0], allowed_range[1]):
-                return True
+    def is_age_correct(self, age):
+        try:
+            age = int(age)
+            
+            allowed_range = (13, 91)
+            if type(age) == int:
+                if age in range(allowed_range[0], allowed_range[1]):
+                    return True
+                else:
+                    return False
             else:
                 return False
-        else:
+        
+        except ValueError:
             return False
 
     def is_name_correct(self, name):
